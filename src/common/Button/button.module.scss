@@ -1,0 +1,11 @@
+@import "src/styles/common.module";
+
+.button {
+  padding: 8px 20px;
+  background: $color-secondary;
+  transition: .3s background-color ease-in-out;
+  cursor: pointer;
+  border: none;
+
+  @include Yoyabo-Button-Text();
+}

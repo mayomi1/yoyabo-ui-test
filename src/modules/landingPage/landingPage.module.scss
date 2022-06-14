@@ -1,0 +1,245 @@
+@import "src/styles/common.module";
+
+.container {
+  background-color: $yoyaba-black;
+
+}
+
+.group1 {
+  width: 75%;
+  margin: auto;
+}
+
+.group2 {
+  width: 100%;
+  margin: auto;
+}
+
+.layout {
+  padding: 20px 0;
+}
+
+.section1 {
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .content {
+    margin: 120px 0 50px;
+    h1 {
+      @include Yoyaba-H1();
+      margin-bottom: 10px;
+    }
+
+    > p {
+      @include Yoyaba-Body-Text-1();
+      width: 260px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .right {
+    > img {
+      width: 450px;
+      height: 576px;
+      transform: translateX(175px);
+    }
+  }
+
+  .partners {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+    svg {
+      width: 100px;
+      height: 25px;
+    }
+  }
+
+}
+
+.section2 {
+  margin-top: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .left {
+    width: 220px;
+    h1 {
+      @include Yoyaba-H2();
+    }
+
+    p {
+      @include Yoyaba-Body-Text-2()
+    }
+  }
+
+  .right {
+    width: 300px;
+
+    .wordpressBox {
+      width: 300px;
+      height: 148px;
+      border-bottom: 2px solid #A6DAC7;
+
+      margin-bottom: 40px;
+
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+
+      //background: transparent;
+      //background-image: url("../../assets/section1Right.png");
+      //background-position: center;
+      //background-repeat: no-repeat;
+      //background-size: cover;
+      backdrop-filter: blur(34px);
+      --webkit-backdrop-filter: blur(34px);
+      background-color: rgba(255, 255, 255, 0.04);
+
+      h3 {
+        @include Yoyaba-H3()
+      }
+
+      p {
+        @include Yoyaba-Body-Text-3()
+      }
+
+      position: relative;
+      svg {
+        position: absolute;
+        left: -25px;
+        top: 48px;
+
+        width: 48px;
+        height: 54px;
+      }
+    }
+  }
+}
+
+.section3 {
+  &Image {
+    width: 100%;
+  }
+}
+
+.section4 {
+  > h1 {
+    width: 501px;
+    @include Yoyaba-H2();
+    line-height: 35px;
+  }
+
+  > div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
+
+    margin-top: 160px;
+
+
+
+    .designBox {
+      padding: 20px;
+
+      backdrop-filter: blur(27px);
+      --webkit-backdrop-filter: blur(27px);
+      background-color: rgba(255, 255, 255, 0.04);
+
+      &Icon {
+        display: flex;
+        justify-content: flex-end;
+      }
+      > div > svg {
+        width: 48px;
+        height: 54px;
+        padding-bottom: 5px;
+      }
+
+      h3 {
+        @include Yoyaba-H3();
+      }
+
+      p {
+        @include Yoyaba-Body-Text-3();
+        width: 200px;
+      }
+    }
+  }
+}
+
+.section5 {
+  margin: 160px 0;
+
+  img {
+    width: 366px;
+    height: 329px;
+  }
+
+  .scrollWrapper {
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+
+    display: flex;
+    align-items: center;
+    //flex-wrap: nowrap;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .card {
+      flex: 0 0 auto;
+      padding: 0 20px;
+      //display: flex;
+      //flex-direction: column;
+      //align-items: flex-start;
+
+      position: relative;
+      p {
+        @include Yoyaba-Body-Text-3();
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        margin-bottom: 10px;
+        display: block;
+        @include Yoyaba-H2();
+      }
+    }
+
+    .scroll1 {
+      width: 268px;
+      height: 239px;
+    }
+
+    .scroll2 {
+      width: 246px;
+      height: 249px;
+    }
+
+    .scroll3 {
+      width: 277px;
+      height: 221px;
+      margin-top: 13px;
+      margin-bottom: 10px
+    }
+
+    .scrollText1 {
+      padding-left: 29px;
+    }
+
+    .scrollText2 {
+      padding-left: 19px;
+    }
+
+    .scrollText3 {
+      padding-left: 27px;
+    }
+  }
+}

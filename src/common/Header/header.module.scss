@@ -1,0 +1,21 @@
+@import "src/styles/common.module";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 40px;
+  background-color: $yoyaba-black;
+
+  > nav {
+    ul {
+      display: flex;
+      li {
+        margin-left: 20px;
+        font-size: 14px;
+        color: $yoyaba-white;
+      }
+    }
+  }
+}

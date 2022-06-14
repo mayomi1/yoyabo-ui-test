@@ -1,0 +1,14 @@
+@import "src/styles/common.module";
+
+.landingContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: $yoyaba-black;
+
+}
+
+.main {
+  //margin: auto;
+}

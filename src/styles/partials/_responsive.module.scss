@@ -1,0 +1,40 @@
+/**
+  Responsive screens
+ */
+@mixin responsive ($breakpoint){
+  @if $breakpoint == mobile {
+    @media (max-width: 1439px) {
+      @content
+    }
+  }
+
+  @if $breakpoint == sm_mobile {
+    @media (max-width: 375px) {
+      @content
+    }
+  }
+
+  @if $breakpoint == xs_mobile {
+    @media (max-width: 350px) {
+      @content
+    }
+  }
+
+  @if $breakpoint == stop_desktop {
+    @media (min-width: 1439px) {
+      display: none;
+    }
+  }
+
+  @if $breakpoint == show_desktop {
+    @media (max-width: 1439px) {
+      display: none;
+    }
+  }
+
+  @else {
+    @media (max-width: $breakpoint) {
+      @content
+    }
+  }
+}
