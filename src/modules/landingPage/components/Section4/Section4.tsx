@@ -41,8 +41,9 @@ const Section4 = () => {
 
       <div>
         {
-          DesignBoxItems.map(({ title, description, Icon }) => (
+          DesignBoxItems.map(({ title, description, Icon }, i) => (
             <motion.div
+              key={i}
               variants={section4DesignBox}
               initial="initial"
               whileInView="animate"

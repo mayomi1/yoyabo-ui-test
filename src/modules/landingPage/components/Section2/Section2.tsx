@@ -62,8 +62,9 @@ const Section2 = () => {
 
         <div className={styles.right}>
           {
-            WordpressTextItems.map(({title, description, Icon}) => (
+            WordpressTextItems.map(({title, description, Icon}, id) => (
               <motion.div
+                key={id}
                 variants={section2Wordpress}
                 initial="initial"
                 whileInView="animate"
