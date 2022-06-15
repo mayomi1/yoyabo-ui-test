@@ -6,7 +6,6 @@ export const section1Fadein: Variants = {
   },
   animate: {
     opacity: 1,
-    delay: 2
   }
 }
 

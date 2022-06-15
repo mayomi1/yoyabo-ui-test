@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../common/Header';
 import styles from './layout.module.scss';
 
-const Landing: React.FC<{}> = ({children}) => {
+const Landing: React.FC<{children: React.ReactNode}> = ({children}) => {
   return (
     <div className={styles.layoutWrapper}>
       <div className={styles.landingContainer}>
