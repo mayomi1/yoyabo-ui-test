@@ -9,8 +9,10 @@ import Section5 from "./components/Section5";
 const Landing = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.group1}>
+      <div className={styles.group2}>
         <Section1 />
+      </div>
+      <div className={styles.group1}>
         <Section2 />
       </div>
       <div className={styles.group2}>

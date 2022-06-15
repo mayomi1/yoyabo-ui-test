@@ -27,21 +27,21 @@ export const staggerContainer: Variants = {
   },
 };
 
-export const bottleWrapper: Variants = {
+export const yoyabaMainImgWrapper: Variants = {
   initial: {
     y: -1000,
   },
   animate: {
     y: 0,
     transition: {
-      delay: 2.6,
+      delay: 0.5,
       duration: 0.8,
       type: "spring",
     },
   },
 };
 
-export const bottle: Variants = {
+export const yoyabaMainImg: Variants = {
   initial: {
     y: 0,
   },
@@ -55,7 +55,7 @@ export const bottle: Variants = {
   },
 };
 
-export const leafWrapper: Variants = {
+export const stoneWrapper: Variants = {
   initial: {
     y: -800,
   },
@@ -68,7 +68,7 @@ export const leafWrapper: Variants = {
     },
   },
 };
-export const leaf: Variants = {
+export const stone: Variants = {
   initial: {
     x: 0,
   },

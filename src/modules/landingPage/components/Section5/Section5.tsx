@@ -3,6 +3,7 @@ import styles from '../../landingPage.module.scss';
 import Scroll1 from "@assets/scroll1.png";
 import Scroll2 from "@assets/scroll2.png";
 import Scroll3 from "@assets/scroll3.png";
+import {motion} from "framer-motion";
 
 const CardItems = [
   {
@@ -60,13 +61,14 @@ const Section5 = () => {
       <div className={styles.scrollWrapper}>
         {
           CardItems.map(({img, scrollText, alt, captionDesc, captionTitle, imgClassName}, i) => (
-            <div className={styles.card} key={i}>
+            <motion.div className={styles.card} key={i} whileHover={{ scale: 1.1 }}
+            >
               <img src={img} alt={alt} className={imgClassName}/>
               <div className={scrollText}>
                 <p>{captionDesc}</p>
                 <h2>{captionTitle}</h2>
               </div>
-            </div>
+            </motion.div>
           ))
         }
       </div>
