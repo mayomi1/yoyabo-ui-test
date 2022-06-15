@@ -10,12 +10,22 @@
 
   > nav {
     ul {
+      @include responsive (show_desktop);
       display: flex;
       li {
         margin-left: 20px;
         font-size: 14px;
         color: $yoyaba-white;
       }
+    }
+  }
+
+  .mobileIcon {
+    @include responsive (stop_desktop);
+    @include responsive(mobile) {
+      display: block;
+      width: 35px;
+      height: 29px;
     }
   }
 }

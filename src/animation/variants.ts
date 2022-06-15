@@ -1,38 +1,65 @@
 import { Variants } from "framer-motion";
 
-export const fadeIn = (direction = "up"): Variants => {
-  return {
-    initial: {
-      y: direction === "up" ? 40 : -60,
-      opacity: 0,
-    },
-    animate: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-        ease: "easeInOut",
-      },
-    },
-  };
-};
-
-export const staggerContainer: Variants = {
-  initial: {},
-  animate: {
-    transition: {
-      delayChildren: 0.7,
-      staggerChildren: 0.5,
-    },
+export const section1Fadein: Variants = {
+  initial: {
+    opacity: 0,
   },
-};
+  animate: {
+    opacity: 1,
+    delay: 2
+  }
+}
+
+export const section2Wordpress: Variants = {
+  initial: {
+    x: 30,
+  },
+  animate: {
+    x: 0,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 0.8
+    }
+  }
+}
+
+export const section4Text = {
+  initial: {
+    opacity: 0,
+      x: 40,
+      scale: 0,
+  },
+  animate: {
+    type: "tween",
+      opacity: 1,
+      x: 0,
+      scale: 1,
+      duration: 2.8
+  }
+}
+
+
+export const section4DesignBox: Variants = {
+  initial: {
+    y: 30,
+  },
+  animate: {
+    x: 0,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 0.8
+    }
+  }
+}
 
 export const yoyabaMainImgWrapper: Variants = {
   initial: {
-    y: -1000,
+    x: 30,
   },
   animate: {
-    y: 0,
+    x: 0,
     transition: {
       delay: 0.5,
       duration: 0.8,

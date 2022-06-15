@@ -2,7 +2,6 @@
 
 .container {
   background-color: $yoyaba-black;
-
 }
 
 .group1 {
@@ -29,6 +28,7 @@
   .content {
     margin: 120px 0 50px;
     padding-left: 12%;
+
     h1 {
       @include Yoyaba-H1();
       margin-bottom: 10px;
@@ -89,6 +89,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include responsive (850px) {
+      flex-direction: column;
+    }
   }
 
   .partners {
@@ -99,17 +103,39 @@
     svg {
       width: 100px;
       height: 25px;
+
+      @include responsive(mobile) {
+        width: 50px;
+        height: 25px;
+      }
+
+      @include responsive(sm_mobile) {
+        width: 40px;
+        height: 25px;
+      }
+
+      @include responsive(sm_mobile) {
+        width: 30px;
+        height: 25px;
+      }
     }
   }
 
   .left {
-    width: 220px;
+    width: 420px;
     h1 {
       @include Yoyaba-H2();
+      margin-bottom: 20px;
     }
 
     p {
-      @include Yoyaba-Body-Text-2()
+      @include Yoyaba-Body-Text-2();
+      margin-bottom: 20px;
+    }
+
+    @include responsive (850px) {
+      width: 75%;
+      margin: auto auto 40px auto
     }
   }
 
@@ -127,12 +153,6 @@
       justify-content: center;
       align-content: center;
       align-items: center;
-
-      //background: transparent;
-      //background-image: url("../../assets/section1Right.png");
-      //background-position: center;
-      //background-repeat: no-repeat;
-      //background-size: cover;
       backdrop-filter: blur(34px);
       --webkit-backdrop-filter: blur(34px);
       background-color: rgba(255, 255, 255, 0.04);
@@ -166,22 +186,29 @@
 
 .section4 {
   > h1 {
-    width: 501px;
+    width: 60%;
     @include Yoyaba-H2();
-    line-height: 35px;
+
+    @include responsive(mobile) {
+      margin-top: 80px;
+      width: 80%;
+    }
   }
 
   > div {
     display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 30px;
-
     margin-top: 160px;
 
-
+    @include responsive(mobile) {
+      grid-template-columns: auto;
+      row-gap: 30px;
+    }
 
     .designBox {
       padding: 20px;
+      border-left: 2px solid $color-secondary;
 
       backdrop-filter: blur(27px);
       --webkit-backdrop-filter: blur(27px);

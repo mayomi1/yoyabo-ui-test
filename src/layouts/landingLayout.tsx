@@ -4,12 +4,13 @@ import styles from './layout.module.scss';
 
 const Landing: React.FC<{}> = ({children}) => {
   return (
-    <div className={styles.landingContainer}>
-      <Header />
-
-      <main className={styles.main}>
-        {children}
-      </main>
+    <div className={styles.layoutWrapper}>
+      <div className={styles.landingContainer}>
+        <Header />
+        <main>
+          {children}
+        </main>
+      </div>
     </div>
   )
 }

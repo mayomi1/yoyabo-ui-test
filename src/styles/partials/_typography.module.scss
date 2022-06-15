@@ -5,24 +5,31 @@
 @mixin Yoyaba-H1() {
   font-family: "Bebas Neue";
   font-weight: normal;
-  font-size: 60px;
-  line-height: 44px;
+  font-size: 89px;
+  line-height: 0.8;
   text-align: left;
   color: $yoyaba-white;
 
   @include responsive(mobile) {
+    font-size: 60px;
+    line-height: 0.8;
   }
 }
 
 @mixin Yoyaba-H2() {
   font-family: "Bebas Neue";
   font-weight: normal;
-  font-size: 35px;
-  line-height: 27px;
+  font-size: 71px;
+  line-height: 0.8;
   text-align: left;
   color: $yoyaba-white;
 
   @include responsive(mobile) {
+    font-size: 65px;
+  }
+
+  @include responsive(sm_mobile) {
+    font-size: 50px;
   }
 }
 
@@ -57,8 +64,8 @@
 @mixin Yoyaba-Body-Text-2() {
   font-family: Poppins;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 23px;
+  line-height: 1.1;
   text-align: left;
   color: $yoyaba-white;
 

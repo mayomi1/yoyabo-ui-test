@@ -1,12 +1,15 @@
 @import "src/styles/common.module";
 
+.layoutWrapper {
+  background-color: $yoyaba-black;
+}
 .landingContainer {
   display: flex;
   flex-direction: column;
+  max-width: 1440px;
+  margin: auto;
   width: 100vw;
   overflow-x: hidden;
-  background-color: $yoyaba-black;
-
 }
 
 .main {

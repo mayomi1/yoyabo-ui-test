@@ -1,6 +1,7 @@
 import React from "react";
 import styles from './header.module.scss';
-import logo from '../../assets/logo.png'
+import logo from '@assets/logo.png'
+import menuIcon from '@assets/square.png';
 
 const navItems = [
   {
@@ -47,6 +48,7 @@ const Header = () => {
             <li key={id}><a href={href}>{name}</a></li>
           ))}
         </ul>
+        <img  className={styles.mobileIcon} src={menuIcon} alt='menu icon'/>
       </nav>
     </header>
   )

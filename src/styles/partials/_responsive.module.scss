@@ -3,31 +3,31 @@
  */
 @mixin responsive ($breakpoint){
   @if $breakpoint == mobile {
-    @media (max-width: 1439px) {
+    @media (max-width: 780px) {
       @content
     }
   }
 
   @if $breakpoint == sm_mobile {
-    @media (max-width: 375px) {
+    @media (max-width: 575px) {
       @content
     }
   }
 
   @if $breakpoint == xs_mobile {
-    @media (max-width: 350px) {
+    @media (max-width: 400px) {
       @content
     }
   }
 
   @if $breakpoint == stop_desktop {
-    @media (min-width: 1439px) {
+    @media (min-width: 780px) {
       display: none;
     }
   }
 
   @if $breakpoint == show_desktop {
-    @media (max-width: 1439px) {
+    @media (max-width: 780px) {
       display: none;
     }
   }
